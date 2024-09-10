@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Pull Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="scene1" class="scene">
+        <img id="packImage" src="pack.png" alt="Card Pack" ondragstart="return false;">
+        <button id="revealButton">Tap to Reveal</button>
+    </div>
+
+    <!-- Card scenes -->
+    <div id="scene2" class="scene hidden">
+        <!-- <div id="bgGlow2" class="bgGlow hidden">
+            <object data="star.svg" type="image/svg+xml"></object>
+        </div> -->
+        <div id="card2" class="card hidden">
+            <img src="card2.png" alt="Pulled Card" ondragstart="return false;">
+        </div>
+        <div id="cardText2" class="cardText hidden">
+            <h2 class="title">Card 1</h2>
+            <p class="subtitle">This is a card subtitle.</p>
+        </div>
+    </div>
+
+    <div id="scene3" class="scene hidden">
+        <!-- <div id="bgGlow3" class="bgGlow hidden">
+            <object data="star.svg" type="image/svg+xml"></object>
+        </div> -->
+        <div id="card3" class="card hidden">
+            <img src="card3.png" alt="Pulled Card" ondragstart="return false;">
+        </div>
+        <div id="cardText3" class="cardText hidden">
+            <h2 class="title">Card 2</h2>
+            <p class="subtitle">This is another card subtitle.</p>
+        </div>
+    </div>
+
+    <div id="scene4" class="scene hidden">
+        <!-- Updated SVG element -->
+        <div id="rotatingSVG" class="hidden">
+            <svg width="600" height="600" viewBox="0 0 761 801" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M380.5 0.5L427.714 255.191L615.614 76.8932L504.107 310.694L760.923 276.893L533.286 400.5L760.923 524.107L504.107 490.306L615.614 724.107L427.714 545.808L380.5 800.5L333.286 545.808L145.386 724.107L256.893 490.306L0.0773926 524.107L227.714 400.5L0.0773926 276.893L256.893 310.694L145.386 76.8932L333.286 255.191L380.5 0.5Z" fill="#FFD700"/>
+            </svg>
+        </div>
+        <div id="card4" class="card hidden">
+            <img src="card4.png" alt="Pulled Card" ondragstart="return false;">
+        </div>
+        <div id="cardText4" class="cardText hidden">
+            <h2 class="title">Card 3</h2>
+            <p class="subtitle">This is yet another card subtitle.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
