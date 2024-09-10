@@ -28,6 +28,14 @@ body, html {
     pointer-events: none;
 }
 
+#blurredPackImage {
+    position: absolute;
+    width: 250px;
+    filter: blur(80px);
+    z-index: 0; /* Place it behind the main pack image */
+    animation: levitate 2s infinite ease-in-out;
+}
+
 #packImage {
     width: 250px;
     animation: levitate 2s infinite ease-in-out;
